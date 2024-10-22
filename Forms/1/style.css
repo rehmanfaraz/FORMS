@@ -1,0 +1,147 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    width: 100%;
+
+}
+
+.nav {
+    top: 0;
+    justify-content: space-around;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    z-index: 100;
+}
+
+.navlogo {
+    padding-top: 20px;
+    color: white;
+}
+
+.nav-menu ul {
+    display: flex;
+    /* display: inline-block; */
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 15px;
+    margin: 0 25px;
+    transform: scaleX(0);
+    /* Start hidden */
+    transition: transform 0.3s ease;
+
+}
+
+.link:hover,
+.active {
+    border-bottom: 2px solid white;
+    transform: scaleX(1);
+    /* Reveal underline */
+}
+
+/* Button transition */
+.navbutton .btn {
+    width: 130px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 30px;
+}
+
+.navbutton .btn:hover {
+    background-color: rgba(240, 248, 255, 0.508);
+    /* Change color smoothly */
+    transform: scale(1.05);
+    /* Slightly scale on hover */
+}
+
+#registerbtn {
+    margin-left: 20px;
+}
+
+.nav-menu-btn {
+    display: none;
+}
+/* <!------------form css----------------->
+
+.form-box {
+    position: relative;
+    align-items: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.top span {
+    color: white;
+    font-size: smaller;
+    padding: 10px 0px;
+
+}
+
+.top span a {
+    font-size: larger;
+    font-weight: 200;
+    margin-left: 10px;
+    color: white;
+
+}
+
+header {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.two-forms {
+    display: flex;
+    gap: 10px;
+}
+.input-field{
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    background: rgba(255s, 255s, 255, 0.508);
+} */
